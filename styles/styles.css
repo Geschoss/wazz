@@ -1,0 +1,193 @@
+@font-face {
+    font-family: OpenSansLight;
+    src: url(../fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+    font-family: OpenSansExtraBold;
+    src: url(../fonts/OpenSans-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: OpenSansBold;
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+.header {
+    position: relative;
+    z-index: 3;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.29);
+}
+.game__header {
+    position: relative;
+    padding: 10px 20px;
+    height: 125px;
+}
+.game__img {
+    height: 325px;
+    background-position: center;
+    background-size: cover;
+}
+
+.game__title {
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: right;
+    font-family: OpenSansExtraBold, sans-serif;
+}
+
+.game__description {
+    padding-top: 10px;
+    color: white;
+    font-size: 20px;
+    text-align: right;
+    font-family: OpenSansLight, sans-serif;
+}
+/* CTS */
+.game__header_crash {
+    background-color: #9cb1f0;
+    box-shadow: 0 30px 27px 15px #9cb1f0;
+}
+.game__img_crash {
+    background-image: url(../img/SCT_web_banner.png);
+}
+/* cats */
+.game__header_cats {
+    background-color: #1a474d;
+    box-shadow: 1px 30px 23px 20px #1a474d;
+}
+.game__img_cats {
+    background-image: url(../img/cats_alchemy_web_banner.png);
+}
+/* tanks */
+.game__header_tanks {
+    background-color: #39435c;
+    box-shadow: 1px 30px 23px 20px #39435c;
+}
+.game__img_tanks {
+    background-image: url(../img/tank_2_web_banner.png);
+}
+ /* mobile menu */
+.m-menu__container {
+    z-index: 1;
+    position: absolute;
+    top: -1000px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: top 800ms cubic-bezier(.55, .25, 0, .99);
+}
+
+.m-menu__container.opened {
+    top: 70px;
+}
+
+.menu__item {
+    padding-bottom: 15px;
+    color: #0a3039;
+    text-align: right;
+    font-size: 52px;
+    font-family: OpenSansBold, sans-serif;
+}
+
+.menu__list {
+    padding: 20px;
+}
+/* mobile menu */
+
+/* mobile menu button */
+.c-hamburger {
+  z-index: 4;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 35px;
+  height: 50px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+}
+
+.c-hamburger:focus {
+  outline: none;
+}
+
+.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: 26px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #cd2a2a;
+}
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #cd2a2a;
+  content: "";
+}
+
+.c-hamburger span::before {
+  top: -10px;
+}
+
+.c-hamburger span::after {
+  bottom: -10px;
+}
+
+.c-hamburger--htx span::before,
+.c-hamburger--htx span::after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+
+.c-hamburger--htx span {
+  transition: background 0s 0.3s;
+}
+
+.c-hamburger--htx span::before {
+  transition-property: top, transform;
+}
+
+.c-hamburger--htx span::after {
+  transition-property: bottom, transform;
+}
+
+.c-hamburger--htx.is-active span {
+    background: none;
+}
+
+.c-hamburger--htx.is-active span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.c-hamburger--htx.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.c-hamburger--htx.is-active span::before,
+.c-hamburger--htx.is-active span::after {
+  transition-delay: 0s, 0.3s;
+}
