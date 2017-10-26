@@ -17,50 +17,100 @@
 </header>
 <div class="m-menu__container">
     <ul class="menu__list">
-     <li class="menu__item">игры</li>
-     <li class="menu__item">вакансии</li>
-     <li class="menu__item">студия</li>
-     <li class="menu__item">контакты</li>
+     <li class="menu__item"><a href="#games">игры</a></li>
+     <li class="menu__item"><a href="#vacancies">вакансии</a></li>
+     <li class="menu__item"><a href="#contacts">студия</a></li>
+     <li class="menu__item"><a href="#contacts">контакты</a></li>
     </ul>
 </div>
-<div class="games">
+<section id="games" class="games">
     <div class="game__item">
-        <div class="game__header game__header_crash">
-            <div class="game__title">
+        <header class="game__header game__header_crash">
+            <h2 class="game__title">
                 crashtest simple
-            </div>
+            </h2>
             <div class="game__description">
                 Супер-залипалово<br/> с котами
             </div>
-        </div>
+        </header>
         <div class="game__img game__img_crash">
         </div>
     </div>
     <div class="game__item">
-        <div class="game__header game__header_cats">
-            <div class="game__title">
+        <header class="game__header game__header_cats">
+            <h2 class="game__title">
                 crashtest simple
-            </div>
+            </h2>
             <div class="game__description">
                 Супер-залипалово<br/> с котами
             </div>
-        </div>
+        </header>
         <div class="game__img game__img_cats">
         </div>
     </div>
     <div class="game__item">
-        <div class="game__header game__header_tanks">
-            <div class="game__title">
+        <header class="game__header game__header_tanks">
+            <h2 class="game__title">
                 crashtest simple
-            </div>
+            </h2>
             <div class="game__description">
                 Супер-залипалово<br/> с котами
             </div>
-        </div>
+        </header>
         <div class="game__img game__img_tanks">
         </div>
     </div>
-</div>
+</section>
+<section id="vacancies" class="vacancies">
+    <header class="vacancies__header header_padding">
+        <h2 class="vacancies__title">
+            Вакансия:
+        </h2>
+        <div class="vacancies__text">
+            продакт-менеджер
+        </div>
+    </header>
+    <div class="vacancies__content header_padding">
+        <div class="vacancies__content">
+            <h2 class="content__header">
+                Задачи:
+            </h2>
+            <h2 class="content__text">
+                Руководить разработкой<br />
+                анализировать метрики<br />
+                планировать спринты<br />
+                ставить цели<br />
+                добиваться результатов <br />
+                получать процент от игр<br />
+            </br/>
+            </h2>
+        </div>
+    </div>
+    <footer class="vacancies__footer">
+            <a class="vacancies__more" href="">
+                подробнее
+            </a>
+    </footer>
+</section>
+<section id="contacts" class="contacts">
+    <h2 class="contacts__title header_padding">
+        напишите нам
+    </h2>
+    <div class="header_padding">
+        <h3 class="contacts__text">
+            Работа в компании:
+        </h3>
+        <span class="contacts__mail">
+            alina.yantsen@wazzapps.org <br/>
+        </span>
+        <h3 class="contacts__text contacts__info">
+            Общие вопросы:
+        </h3>
+        <span class="contacts__mail">
+            info@wazzapps.org<br/>
+        </span>
+    </div>
+</section>
 <script type="text/javascript" src="src/data.json"></script>
 <script src="src/script.js"></script>
 </body>

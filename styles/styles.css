@@ -2,28 +2,37 @@
     font-family: OpenSansLight;
     src: url(../fonts/OpenSans-Light.ttf);
 }
-
+@font-face {
+    font-family: OpenSansRegular;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
 @font-face {
     font-family: OpenSansExtraBold;
     src: url(../fonts/OpenSans-ExtraBold.ttf);
 }
-
 @font-face {
     font-family: OpenSansBold;
     src: url(../fonts/OpenSans-Bold.ttf);
 }
 
+.header_padding {
+    padding: 10px 20px 0 20px;
+}
 .header {
-    position: relative;
+    position: fixed;
     z-index: 3;
+    width: 100%;
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
     background-color: white;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.29);
 }
+.games {
+    padding-top: 80px;
+}
+
 .game__header {
     position: relative;
     padding: 10px 20px;
@@ -74,10 +83,80 @@
 .game__img_tanks {
     background-image: url(../img/tank_2_web_banner.png);
 }
+
+.vacancies__header {
+    padding-top: 35px;
+    height: 135px;
+    background-color: #036db9;
+}
+.vacancies__title {
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: white;
+    font-family: OpenSansLight, sans-serif;
+}
+.vacancies__text {
+    font-size: 45px;
+    color: white;
+    text-transform: uppercase;
+    font-family: OpenSansBold, sans-serif;
+}
+
+.content__header {
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: #036db9;
+    font-family: OpenSansLight, sans-serif;
+}
+.content__text {
+    line-height: 140%;
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: #3c9bde;
+    font-family: OpenSansLight, sans-serif;
+}
+.vacancies__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    box-shadow: 0 -4px 7px rgba(0, 0, 0, 0.12);
+}
+.vacancies__more {
+    text-align: center;
+    color: #036db9;
+    font-size: 23px;
+    text-transform: uppercase;
+    font-family: OpenSansBold, sans-serif;
+}
+/* contacts */
+.contacts__title {
+    margin-bottom: 35px;
+    color: #c21818;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-family: OpenSansExtraBold, sans-serif;
+}
+
+.contacts {
+    height: 400px;
+}
+
+.contacts__text {
+    font-family: OpenSansRegular, sans-serif;
+}
+.contacts__mail {
+    line-height: 1.2;
+    font-family: OpenSansLight, sans-serif;
+}
+
+.contacts__info {
+    margin-top: 15px;
+}
  /* mobile menu */
 .m-menu__container {
     z-index: 1;
-    position: absolute;
+    position: fixed;
     top: -1000px;
     width: 100%;
     height: 100%;
@@ -91,8 +170,11 @@
 
 .menu__item {
     padding-bottom: 15px;
-    color: #0a3039;
     text-align: right;
+}
+.menu__item  a {
+    text-decoration: none;
+    color: #0a3039;
     font-size: 52px;
     font-family: OpenSansBold, sans-serif;
 }
@@ -104,11 +186,11 @@
 
 /* mobile menu button */
 .c-hamburger {
+  margin-right: 20px;
   z-index: 4;
   display: block;
   position: relative;
   overflow: hidden;
-  margin: 0;
   padding: 0;
   width: 35px;
   height: 50px;
