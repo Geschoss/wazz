@@ -2,11 +2,12 @@
     'use strict';
 
     const menuBtn = $('.c-hamburger');
-    const collapsedMenu = $('.site-header-collapsed');
-    const menuItems = findAll('.menu__item');
+    const collapsedMenu = $('.header-collapsed');
+    const menuItems = findAll('.menu-item');
+    const moreBtn = $('.vacancies__more-btn');
+    const collapsedVacancies = $('.vacancies__content-collapsed');
 
-
-    menuItems.forEach(item => item.addEventListener('click', closeMenu));
+    menuItems.forEach(item => item.addEventListener('click', handlerItemSelected));
 
     menuBtn.addEventListener( 'click', function(e) {
         e.preventDefault();
@@ -14,11 +15,19 @@
         toggleClass(collapsedMenu, 'opened');
     });
 
-    // utils
-    function closeMenu(e) {
+    moreBtn.addEventListener('click', function(e) {
         e.preventDefault();
+        toggleClass(this, 'is-active');
+        toggleClass(collapsedVacancies, 'opened');
+    });
+
+
+    // utils
+    function handlerItemSelected(e) {
         dropItemsClass(menuItems, 'active');
         addClass(this, 'active');
+        removeClass(collapsedMenu, 'opened');
+        removeClass(menuBtn, 'is-active');
     }
 
     function dropItemsClass(items, className) {

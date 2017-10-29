@@ -1,29 +1,46 @@
 a, a:focus, a:hover {
-    color: #4183D7;
-    text-decoration: none;
-    cursor: pointer;
-    outline: 0;
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0;
 }
 
 *, :after, :before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.archol {
+  position: relative;
+  top: -80px;
+  width: 100%;
+}
+.text {
+  text-transform: uppercase;
+}
+
+@media (min-width: 1024px) {
+  .archol {
+    top: -118px;
+    width: 100%;
+  }
+}
+@font-face {
+  font-family: OpenSansLight;
+  src: url(../fonts/OpenSans-Light.ttf);
 }
 
 @font-face {
-    font-family: OpenSansLight;
-    src: url(../fonts/OpenSans-Light.ttf);
+  font-family: OpenSansRegular;
+  src: url(../fonts/OpenSans-Regular.ttf);
 }
+
 @font-face {
-    font-family: OpenSansRegular;
-    src: url(../fonts/OpenSans-Regular.ttf);
+  font-family: OpenSansExtraBold;
+  src: url(../fonts/OpenSans-ExtraBold.ttf);
 }
+
 @font-face {
-    font-family: OpenSansExtraBold;
-    src: url(../fonts/OpenSans-ExtraBold.ttf);
-}
-@font-face {
-    font-family: OpenSansBold;
-    src: url(../fonts/OpenSans-Bold.ttf);
+  font-family: OpenSansBold;
+  src: url(../fonts/OpenSans-Bold.ttf);
 }

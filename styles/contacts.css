@@ -1,0 +1,14 @@
+
+
+
+@media (min-width: 1024px) {
+  .contacts {
+    background: linear-gradient(to bottom, #009dba 0%,#009dba 22%,white 22%,white 100%);
+  }
+  .contacts__island {
+    margin: auto;
+    width: 70%;
+    background-color: white;
+    box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.29);
+  }
+}
