@@ -13,7 +13,6 @@
 }
 
 .vacancies__text {
-  height: 210px;
   padding-left: 21px;
   font-size: 49px;
   color: white;
@@ -173,6 +172,7 @@
     display: none;
   }
   .vacancies__text {
+    height: 210px;
     margin-right: 60px;
     font-size: 55px;
     line-height: 1.2;
