@@ -13,7 +13,6 @@
 @media (min-width: 1024px) {
   .studio {
     margin-bottom: 0;
-    margin-top: 180px;
     padding-bottom: 200px;
     background: linear-gradient(to bottom, white 0%,white 22%,#009dba 22%,#009dba 100%);
   }
