@@ -165,6 +165,8 @@
   }
 
   .vacancies__info-btn {
+    z-index: 10;
+    position: relative;
     display: block;
     padding: 20px 0;
     width: 100%;
