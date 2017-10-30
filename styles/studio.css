@@ -20,6 +20,7 @@
   .studio__slider {
     margin: auto;
     width: 55%;
+    height: 384px;
     box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.29);
   }
   .studio__slider-img {

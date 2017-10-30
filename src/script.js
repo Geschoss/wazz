@@ -1,6 +1,7 @@
 (function () {
     'use strict';
 
+    const mySiema = new Siema();
     const menuBtn = $('.c-hamburger');
     const collapsedMenu = $('.header-collapsed');
     const menuItems = findAll('.menu-item');
