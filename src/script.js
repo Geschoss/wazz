@@ -7,6 +7,7 @@
     const menuItems = findAll('.menu-item');
     const moreBtn = $('.vacancies__more-btn');
     const collapsedVacancies = $('.vacancies__content-collapsed');
+    const navBar = $('.header');
 
     menuItems.forEach(item => item.addEventListener('click', handlerItemSelected));
 
@@ -24,6 +25,15 @@
 
     $('.slider__prev').addEventListener('click', () => mySiema.prev());
     $('.slider__next').addEventListener('click', () => mySiema.next());
+
+    window.onscroll = function() {
+        "use strict";
+        if (document.body.scrollTop >= 30 || document.documentElement.scrollTop >= 30) {
+            addClass(navBar, 'header-narrow');
+        } else {
+            removeClass(navBar, 'header-narrow');
+        }
+    };
 
     // utils
     function handlerItemSelected(e) {

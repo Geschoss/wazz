@@ -18,9 +18,8 @@
 /* contacts */
 .contacts__title {
   margin-bottom: 27px;
-  color: #eb3f58;
+  color: #D8022B;
   font-size: 48px;
-  text-transform: uppercase;
   font-family: OpenSansExtraBold, sans-serif;
 }
 
@@ -48,38 +47,40 @@
   }
   .contacts__island {
     margin: auto;
-    padding: 57px 80px;
+    padding: 0 104px;
     width: 67%;
-    height: 555px;
+    height: 740px;
     background-color: white;
     box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.29);
   }
 
   .contacts__img {
     display: block;
-    width: 306px;
+    margin-top: 68px;
+    width: 38%;
     float: left;
   }
 
   .contacts__content {
-    margin-left: 97px;
+    margin-left: 12%;
     float: left;
   }
 
   /* contacts */
   .contacts__title {
-    margin-bottom: 70px;
-    font-size: 31px;
+    margin-top: 72px;
+    margin-bottom: 98px;
+    font-size: 40px;
   }
 
   .contacts__text {
-    font-size: 18px;
+    font-size: 24px;
   }
   .contacts__mail {
     font-size: 20px;
   }
 
   .contacts__info {
-    margin-top: 20px;
+    margin-top: 73px;
   }
 }

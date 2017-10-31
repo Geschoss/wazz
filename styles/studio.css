@@ -3,6 +3,7 @@
 }
 
 .studio__slider-img {
+  display: block;
   width: 100%;
   background-position: center;
   background-size: cover;
@@ -19,14 +20,13 @@
   .studio {
     margin-bottom: 0;
     padding-bottom: 200px;
-    background: linear-gradient(to bottom, white 0%,white 22%,#009dba 22%,#009dba 100%);
+    background: linear-gradient(to bottom, white 0%,white 21%,#009dba 21%,#009dba 100%);
   }
 
   .studio__slider {
     position: relative;
     margin: auto;
     width: 54%;
-    height: auto;
     box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.29);
   }
 
@@ -47,8 +47,13 @@
     border: 4px solid;
     border-right: none;
     border-bottom: none;
+    transition: height 200ms cubic-bezier(.55, .25, 0, .99), width 200ms cubic-bezier(.55, .25, 0, .99);
   }
 
+  .slider__arrow:hover::before {
+    width: 35px;
+    height: 35px;
+  }
   .slider__prev::before {
     transform: rotate(-45deg);
   }

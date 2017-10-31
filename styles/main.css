@@ -19,9 +19,16 @@ a, a:focus, a:hover {
   text-transform: uppercase;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-regular {
+  font-family: OpenSansRegular, sans-serif;
+}
 @media (min-width: 1024px) {
   .archol {
-    top: -118px;
+    top: -112px;
     width: 100%;
   }
 }
