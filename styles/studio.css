@@ -15,17 +15,18 @@
 
 .slider_knobs {
   position: relative;
-  display: flex;
-  justify-content: space-evenly;
   align-items: center;
   width: 80px;
-  height: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin: auto;
 }
 
 .knob::after {
   display: block;
   content: ' ';
+  float: left;
+  margin-right: 5px;
   width: 3px;
   height: 3px;
   border-radius: 10px;
