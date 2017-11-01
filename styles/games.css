@@ -109,7 +109,7 @@
     opacity: 0;
     top: inherit;
     bottom: 66px;
-    padding0right: 74px;
+    padding-right: 74px;
     background-color: transparent;
     box-shadow: none;
     transition: opacity 600ms cubic-bezier(.55, .25, 0, .99);
@@ -128,5 +128,11 @@
   }
   .game__links {
     margin-top: 37px;
+  }
+}
+
+@media (min-width: 1921px) {
+  .games {
+    margin-top: 80px;
   }
 }

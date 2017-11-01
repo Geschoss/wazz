@@ -82,3 +82,11 @@
     margin-top: 69px;
   }
 }
+
+
+@media (min-width: 1921px) {
+  .contacts__img {
+    width: 400px;
+    height: 600px;
+  }
+}
