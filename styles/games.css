@@ -5,7 +5,6 @@
 .game__item {
   position: relative;
   padding-top: 218px;
-  height: 545px;
   background-position-y: bottom;
   background-repeat: no-repeat;
   background-size: 110%;
@@ -89,6 +88,12 @@
   background-image: url(../img/tank_2_web_banner.png);
 }
 
+.game__img-link {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 @media (min-width: 1023px) {
   .games {
     display: flex;
@@ -133,6 +138,20 @@
   }
   .game__links {
     margin-top: 37px;
+  }
+  .game__img_crash {
+    background-image: url(../img/SCT_web_banner.png);
+  }
+
+  .game__img_cats {
+    background-image: url(../img/cats_alchemy_web_banner.png);
+  }
+
+  .game__img_tanks {
+    background-image: url(../img/tank_2_web_banner.png);
+  }
+  .game__img-link {
+    display: none;
   }
 }
 
