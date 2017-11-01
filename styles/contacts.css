@@ -44,7 +44,7 @@
   }
   .contacts__island {
     margin: auto;
-    padding: 0 104px;
+    padding: 0 40px 0 104px;
     width: 67%;
     height: 740px;
     background-color: white;
@@ -59,8 +59,8 @@
   }
 
   .contacts__content {
-    margin-left: 12%;
-    float: left;
+    width: 52%;
+    float: right;
   }
 
   /* contacts */
@@ -74,10 +74,11 @@
     font-size: 24px;
   }
   .contacts__mail {
-    font-size: 20px;
+    margin-top: 9px;
+    font-size: 26px;
   }
 
   .contacts__info {
-    margin-top: 73px;
+    margin-top: 69px;
   }
 }
