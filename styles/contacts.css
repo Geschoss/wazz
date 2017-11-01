@@ -1,9 +1,7 @@
-.contacts {
-}
 .contacts__island {
   padding: 21px 21px;
   width: 100%;
-  height: 555px;
+  height: 500px;
   background-image: linear-gradient( to bottom right, #fbfcfe 0%, #fbfcfe 60%,
           #ffffff 60%, #ffffff 80%,  rgb(255, 253, 246) 80%, rgb(255, 253, 246) 100%);
 }

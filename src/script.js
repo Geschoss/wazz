@@ -1,10 +1,11 @@
 (function () {
     'use strict';
 
-    const mySiema = new Siema();
+    const mySiema = new Siema({ onChange: handleChangeSiema });
     const menuBtn = $('.c-hamburger');
     const collapsedMenu = $('.header-collapsed');
     const menuItems = findAll('.menu-item');
+    const knobs = findAll('.knob');
     const moreBtn = $('.vacancies__more-btn');
     const collapsedVacancies = $('.vacancies__content-collapsed');
     const navBar = $('.header');
@@ -31,18 +32,42 @@
         if (document.body.scrollTop >= 30 || document.documentElement.scrollTop >= 30) {
             addClass(navBar, 'header-narrow');
         } else {
-            removeClass(navBar, 'header-narrow');
+            removeClass(navBar, ['header-narrow']);
         }
     };
 
     // utils
     function handlerItemSelected(e) {
-        dropItemsClass(menuItems, 'active');
+        dropItemsClass(menuItems, ['active']);
         addClass(this, 'active');
-        removeClass(collapsedMenu, 'opened');
-        removeClass(menuBtn, 'is-active');
+        removeClass(collapsedMenu, ['opened']);
+        removeClass(menuBtn, ['is-active']);
     }
 
+    function selectKnobById(items, id) {
+        items.forEach(knob => removeClass(knob, ['active', 'nearby']));
+        addClass(items[id], 'active');
+        addNearbyClass(items, ['nearby'], id);
+    }
+
+    function addNearbyClass(items, classList, id) {
+        let value = 1;
+        classList.forEach(className => {
+            const nextId = id + value;
+            const prevId = id - value;
+            if(items[prevId]) {
+                addClass(items[prevId], className);
+            }
+            if(items[nextId]) {
+                addClass(items[nextId], className);
+            }
+            value++;
+        })
+    }
+
+    function handleChangeSiema() {
+        selectKnobById(knobs, this.currentSlide);
+    }
     function dropItemsClass(items, className) {
         items.forEach(node => removeClass(node, className));
     }
@@ -54,7 +79,7 @@
     }
 
     function removeClass(item, className) {
-        item.classList.remove(className);
+        item.classList.remove(...className);
     }
 
     function addClass(item, className) {
