@@ -41,7 +41,7 @@
   height: 6px;
   background-color: #056dba;
 }
-@media (min-width: 1024px) {
+@media (min-width: 760px) {
   .studio {
     margin-bottom: 0;
     padding-bottom: 200px;

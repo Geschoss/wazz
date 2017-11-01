@@ -18,7 +18,10 @@ a, a:focus, a:hover {
 .text {
   text-transform: uppercase;
 }
-
+.none {
+  opacity: 0;
+  pointer-events: none;
+}
 .uppercase {
   text-transform: uppercase;
 }

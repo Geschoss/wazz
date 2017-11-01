@@ -173,7 +173,7 @@
   display: none;
 }
 
-@media (min-width: 1023px) {
+@media (min-width: 760px) {
   .vacancies {
     margin-bottom: 180px;
   }
@@ -265,4 +265,11 @@
     display: none;
   }
 
+}
+
+@media (min-width: 761px) and (max-width: 1024px) {
+  .vacancies__content-collapsed {
+    padding-top: 50px;
+    margin-left: 170px;
+  }
 }

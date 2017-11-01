@@ -37,7 +37,7 @@
 }
 
 
-@media (min-width: 1024px) {
+@media (min-width: 760px) {
   .contacts {
     padding-bottom: 180px;
     background: linear-gradient(to bottom, #009dba 0%,#009dba 22%,white 22%,white 100%);
@@ -83,6 +83,18 @@
   }
 }
 
+@media (min-width: 761px) and (max-width: 1024px) {
+  .contacts__img {
+    margin-top: 0;
+    padding-top: 30px;
+    width: 18%;
+    float: none;
+  }
+  .contacts__content {
+    width: 72%;
+    float: none;
+  }
+}
 
 @media (min-width: 1921px) {
   .contacts__img {
