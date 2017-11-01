@@ -1,10 +1,10 @@
 .games {
-  margin-top: 68px;
+  margin-top: 36px;
 }
 
 .game__item {
   position: relative;
-  padding-top: 150px;
+  padding-top: 218px;
   height: 545px;
   background-position-y: bottom;
   background-repeat: no-repeat;
@@ -15,6 +15,7 @@
   position: absolute;
   top: 0;
   width: 100%;
+  margin-top: 32px;
   padding: 4px 25px;
   height: 190px;
 }

@@ -50,12 +50,12 @@
 .menu-item  a {
   text-decoration: none;
   color: #0a3039;
-  font-size: 52px;
+  font-size: 42px;
   font-family: OpenSansBold, sans-serif;
 }
 
 .menu-list {
-  padding: 20px;
+  padding: 28px 20px;
 }
 
 /* mobile menu button */
@@ -190,11 +190,12 @@
     display: none;
   }
 
-  .menu-item > a {
+  .menu-item  a {
     display: block;
     padding: 0 26px;
     color: #4e6a70;
     font-size: 20px;
+    font-family: OpenSansRegular, sans-serif;
   }
 
   .menu-item.active > a > span {
