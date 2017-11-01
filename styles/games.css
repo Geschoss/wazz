@@ -49,6 +49,12 @@
 
 .game__link-img {
   height: 30px;
+  transition: height 600ms cubic-bezier(.55, .25, 0, .99);
+}
+
+.game__link-img:hover {
+  height: 35px;
+  box-shadow: 0 0 10px 3px #ffffff6b;
 }
 
 /* CTS */
