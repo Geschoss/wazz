@@ -19,7 +19,6 @@
     });
 
     moreBtn.addEventListener('click', function(e) {
-        e.preventDefault();
         toggleClass(this, 'is-active');
         toggleClass(collapsedVacancies, 'opened');
     });
