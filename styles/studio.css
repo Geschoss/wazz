@@ -19,6 +19,7 @@
 
 .slider_knobs {
   position: relative;
+  list-style-type: none;
   width: 80px;
   padding-top: 20px;
   padding-bottom: 20px;
