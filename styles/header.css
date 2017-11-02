@@ -220,14 +220,8 @@
   }
 }
 
-@media (min-width: 1921px) {
+@media (max-height: 825px) and (min-width: 1023px) {
   .header {
-    height: 80px;
-  }
-  .header-narrow {
-    height: 56px;
-  }
-  .site-logo-img {
-    height: 50px;
+    height: 120px;
   }
 }
