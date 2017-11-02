@@ -61,7 +61,7 @@
 /* mobile menu button */
 .c-hamburger {
   cursor: pointer;
-  margin-top: 13px;
+  margin-top: 12px;
   float: right;
   z-index: 4;
   display: block;

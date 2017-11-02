@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    const mySiema = new Siema({ onChange: handleChangeSiema });
+    const mySiema = new Siema({ onChange: handleChangeSiema, loop: true });
     const menuBtn = $('.c-hamburger');
     const collapsedMenu = $('.header-collapsed');
     const menuItems = findAll('.menu-item');
