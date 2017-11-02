@@ -37,7 +37,7 @@
   background-color: #dbdbdb;
   transition: width 500ms cubic-bezier(.55, .25, 0, .99), height 500ms cubic-bezier(.55, .25, 0, .99);
 }
-.knob.away::after {
+.knob.far::after {
   width: 3px;
   height: 3px;
 }
