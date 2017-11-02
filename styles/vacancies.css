@@ -270,7 +270,7 @@
 @media (min-width: 761px) and (max-width: 1024px) {
   .vacancies__content-collapsed {
     padding-top: 50px;
-    margin-left: 170px;
+    margin: auto;
   }
 
   .vacancies__header {
