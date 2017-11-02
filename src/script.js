@@ -44,13 +44,14 @@
     }
 
     function selectKnobById(items, id) {
-        items.forEach(knob => removeClass(knob, ['active', 'nearby']));
+        items.forEach(knob => removeClass(knob, ['active', 'nearby', 'away', 'far']));
         addClass(items[id], 'active');
-        addNearbyClass(items, ['nearby'], id);
+        addClassToItem(items, ['nearby'], 1, id);
+        addClassToItem(items, ['away'], 2, id);
+        addClassToItem(items, ['far'], 3, id);
     }
 
-    function addNearbyClass(items, classList, id) {
-        let value = 1;
+    function addClassToItem(items, classList, value, id) {
         classList.forEach(className => {
             const nextId = id + value;
             const prevId = id - value;
@@ -60,7 +61,6 @@
             if(items[nextId]) {
                 addClass(items[nextId], className);
             }
-            value++;
         })
     }
 
