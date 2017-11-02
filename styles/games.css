@@ -99,7 +99,7 @@
   .games {
     display: flex;
     flex-direction: row;
-    margin-top: 160px;
+    margin-top: 120px;
   }
   .game__item {
     width: 33.33%;
