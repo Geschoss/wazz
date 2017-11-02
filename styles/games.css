@@ -1,5 +1,5 @@
 .games {
-  margin-top: 68px;
+  margin-top: 80px;
 }
 
 .game__item {
@@ -159,7 +159,7 @@
 }
 @media (min-width: 761px) and (max-width: 1024px) {
   .games {
-    margin-top: 68px;
+    margin-top: 80px;
   }
 
   .game__header {
