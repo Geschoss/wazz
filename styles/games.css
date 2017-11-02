@@ -63,7 +63,7 @@
 
 .game__img_crash {
   background-color: #9cb1f0;
-  background-image: url(../img/SCT_web_banner.png);
+  background-image: url(../img/games/SCT_web_banner_2.jpg);
 }
 
 /* cats */
@@ -74,7 +74,7 @@
 
 .game__img_cats {
   background-color: #1a474d;
-  background-image: url(../img/cats_alchemy_web_banner.png);
+  background-image: url(../img/games/cats_alchemy_web_banner_2.jpg);
 }
 
 /* tanks */
@@ -85,7 +85,7 @@
 
 .game__img_tanks {
   background-color: #39435c;
-  background-image: url(../img/tank_2_web_banner.png);
+  background-image: url(../img/games/tank_2_web_banner_2.jpg);
 }
 
 .game__img-link {
@@ -117,7 +117,8 @@
   .game__header {
     opacity: 0;
     top: inherit;
-    bottom: 66px;
+    width: 100%;
+    bottom: 70px;
     padding-right: 74px;
     background-color: transparent;
     box-shadow: none;
@@ -128,34 +129,40 @@
     opacity: 1;
   }
   .game__title {
+    white-space: nowrap;
     font-size: 34px;
     line-height: 1.1;
   }
   .game__description {
+    white-space: nowrap;
     padding-top: 12px;
     font-size: 25px;
   }
   .game__links {
-    margin-top: 37px;
+    margin-top: 30px;
   }
   .game__img_crash {
-    background-image: url(../img/SCT_web_banner.png);
+    background-image: url(../img/games/SCT_web_banner_2.jpg);
   }
 
   .game__img_cats {
-    background-image: url(../img/cats_alchemy_web_banner.png);
+    background-image: url(../img/games/cats_alchemy_web_banner_2.jpg);
   }
 
   .game__img_tanks {
-    background-image: url(../img/tank_2_web_banner.png);
+    background-image: url(../img/games/tank_2_web_banner_2.jpg);
   }
   .game__img-link {
     display: none;
   }
 }
-@media (min-width: 761px) {
+@media (min-width: 761px) and (max-width: 1024px) {
   .games {
     margin-top: 68px;
+  }
+
+  .game__header {
+    padding-right: 40px;
   }
 }
 

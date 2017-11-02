@@ -250,7 +250,7 @@
   .vacancies__content-text {
     display: block;
     margin-top: 30px;
-    margin-bottom: 13px;
+    margin-bottom: 50px;
     line-height: 140%;
     font-size: 20px;
     color: #3c9bde;
@@ -271,5 +271,10 @@
   .vacancies__content-collapsed {
     padding-top: 50px;
     margin-left: 170px;
+  }
+
+  .vacancies__header {
+    padding: 42px 50px 20px 50px;
+    height: 260px;
   }
 }
