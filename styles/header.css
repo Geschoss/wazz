@@ -161,7 +161,7 @@
   }
 
   .header-narrow {
-    height: 112px;
+    height: 80px;
   }
 
   .header-collapsed {
@@ -185,6 +185,11 @@
   }
   .site-logo-img {
     height: 100px;
+    transition: height 500ms cubic-bezier(.55, .25, 0, .99);
+  }
+
+  .header-narrow .site-logo-img {
+    height: 68px;
   }
 
   .c-hamburger {

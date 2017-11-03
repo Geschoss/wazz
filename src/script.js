@@ -26,8 +26,6 @@
         toggleClass(collapsedVacancies, 'opened');
     });
 
-
-
     $('.slider__prev').addEventListener('click', () => mySiema.prev());
     $('.slider__next').addEventListener('click', () => mySiema.next());
 
