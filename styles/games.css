@@ -58,7 +58,7 @@
 /* CTS */
 .game__header_crash {
   background-color: #9cb1f0;
-  box-shadow: 1px 30px 23px 12px #9cb1f0;
+  box-shadow: 1px 30px 23px 30px #9cb1f0;
 }
 
 .game__img_crash {
@@ -69,7 +69,7 @@
 /* cats */
 .game__header_cats {
   background-color: #1a474d;
-  box-shadow: 1px 30px 23px 12px #1a474d;
+  box-shadow: 1px 30px 23px 30px #1a474d;
 }
 
 .game__img_cats {
@@ -80,7 +80,7 @@
 /* tanks */
 .game__header_tanks {
   background-color: #39435c;
-  box-shadow: 1px 30px 23px 12px #39435c;
+  box-shadow: 1px 30px 23px 30px #39435c;
 }
 
 .game__img_tanks {
