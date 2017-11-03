@@ -37,7 +37,7 @@
 }
 
 
-@media (min-width: 760px) {
+@media (min-width: 769px) {
   .contacts {
     padding-bottom: 180px;
     background: linear-gradient(to bottom, #009dba 0%,#009dba 22%,white 22%,white 100%);
@@ -83,7 +83,7 @@
   }
 }
 
-@media (min-width: 761px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .contacts__island {
     padding-top: 40px;
   }

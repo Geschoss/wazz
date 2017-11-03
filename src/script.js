@@ -1,6 +1,6 @@
 (function () {
     'use strict';
-
+    const gamesList = findAll('.game__item');
     const mySiema = new Siema({ onChange: handleChangeSiema, loop: true });
     const menuBtn = $('.c-hamburger');
     const collapsedMenu = $('.header-collapsed');
@@ -10,7 +10,10 @@
     const collapsedVacancies = $('.vacancies__content-collapsed');
     const navBar = $('.header');
 
-    menuItems.forEach(item => item.addEventListener('click', handlerItemSelected));
+    menuItems.forEach(item => item.addEventListener('click', handlerMenuItemSelected));
+    gamesList.forEach(item => item.addEventListener('click', handlerGameItemSelected));
+    gamesList.forEach(item => item.addEventListener('mouseover', handlerGameItemMouseover));
+    gamesList.forEach(item => item.addEventListener('mouseleave', handlerGameItemMouseleave));
 
     menuBtn.addEventListener( 'click', function(e) {
         e.preventDefault();
@@ -22,6 +25,8 @@
         toggleClass(this, 'is-active');
         toggleClass(collapsedVacancies, 'opened');
     });
+
+
 
     $('.slider__prev').addEventListener('click', () => mySiema.prev());
     $('.slider__next').addEventListener('click', () => mySiema.next());
@@ -36,13 +41,23 @@
     };
 
     // utils
-    function handlerItemSelected(e) {
+    function handlerMenuItemSelected(e) {
         dropItemsClass(menuItems, ['active']);
         addClass(this, 'active');
         removeClass(collapsedMenu, ['opened']);
         removeClass(menuBtn, ['is-active']);
     }
-
+    function handlerGameItemSelected(e) {
+        dropItemsClass(gamesList, ['active']);
+        addClass(this, 'active');
+    }
+    function handlerGameItemMouseover(e) {
+        dropItemsClass(gamesList, ['active']);
+        addClass(this, 'active');
+    }
+    function handlerGameItemMouseleave(e) {
+        dropItemsClass(gamesList, ['active']);
+    }
     function selectKnobById(items, id) {
         items.forEach(knob => removeClass(knob, ['active', 'nearby', 'away', 'far']));
         addClass(items[id], 'active');
@@ -50,7 +65,6 @@
         addClassToItem(items, ['away'], 2, id);
         addClassToItem(items, ['far'], 3, id);
     }
-
     function addClassToItem(items, classList, value, id) {
         classList.forEach(className => {
             const nextId = id + value;
