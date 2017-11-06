@@ -103,7 +103,7 @@
   }
   .game__item {
     width: 33.33%;
-    height: 700px;
+    height: 850px;
     background-position: center;
     background-size: cover;
     transition: width 800ms cubic-bezier(.55, .25, 0, .99);
@@ -168,9 +168,9 @@
 }
 
 
-@media (max-height: 825px) and (min-width: 1023px) {
+@media (max-height: 826px) and (min-width: 1023px) {
   .game__item {
-    height: 560px;
+    height: 580px;
   }
   .games {
     margin-top: 120px;

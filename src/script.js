@@ -1,5 +1,6 @@
 (function () {
     'use strict';
+
     const gamesList = findAll('.game__item');
     const mySiema = new Siema({ onChange: handleChangeSiema, loop: true });
     const menuBtn = $('.c-hamburger');
@@ -7,8 +8,8 @@
     const menuItems = findAll('.menu-item');
     const knobs = findAll('.knob');
     const moreBtn = $('.vacancies__more-btn');
+    const infoBtn = $('.vacancies__info-btn_center');
     const collapsedVacancies = $('.vacancies__content-collapsed');
-    const navBar = $('.header');
 
     menuItems.forEach(item => item.addEventListener('click', handlerMenuItemSelected));
     gamesList.forEach(item => item.addEventListener('click', handlerGameItemSelected));
@@ -25,18 +26,12 @@
         toggleClass(this, 'is-active');
         toggleClass(collapsedVacancies, 'opened');
     });
+    infoBtn.addEventListener('click', function(e) {
+
+    });
 
     $('.slider__prev').addEventListener('click', () => mySiema.prev());
     $('.slider__next').addEventListener('click', () => mySiema.next());
-
-    window.onscroll = function() {
-        "use strict";
-        if (document.body.scrollTop >= 30 || document.documentElement.scrollTop >= 30) {
-            addClass(navBar, 'header-narrow');
-        } else {
-            removeClass(navBar, ['header-narrow']);
-        }
-    };
 
     // utils
     function handlerMenuItemSelected(e) {
